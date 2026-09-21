@@ -1,12 +1,12 @@
 name: testing self hosted agent runner
+
 on:
   push:
-    - main
-
+    branches:
+      - main
 
 jobs:
   build:
-
     runs-on: self-hosted
 
     steps:
