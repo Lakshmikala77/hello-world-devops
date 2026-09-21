@@ -1,5 +1,4 @@
 name: testing self hosted agent runner
-
 on:
   push:
     branches:
@@ -8,9 +7,7 @@ on:
 jobs:
   build:
     runs-on: self-hosted
-
     steps:
       - uses: actions/checkout@v4
-
       - name: Hello
         run: echo "Running on self-hosted runner"
